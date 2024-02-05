@@ -1,6 +1,6 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 {
   "name": ".github",
-  "image": "ghcr.io/jwbennet/.github:latest",
+  "image": "ghcr.io/jwbennet/dotgithub-dev-container:latest",
   "postCreateCommand": "task setup"
 }
