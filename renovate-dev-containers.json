@@ -1,0 +1,23 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": ["devcontainer.json", "devcontainer.json.jinja"],
+      "matchStrings": ["\"image\": \"(?<depName>[^:]*):(?<currentValue>.*)\""],
+      "datasourceTemplate": "docker",
+      "versioningTemplate": "{{#if (or (equals currentValue 'focal') (equals currentValue 'jammy'))}}ubuntu{{else}}docker{{/if}}"
+    },
+    {
+      "customType": "regex",
+      "fileMatch": ["devcontainer.json", "devcontainer.json.jinja"],
+      "matchStrings": [
+        "// renovate: depType=(?<depType>devcontainerFeature?) datasource=(?<datasource>.*?)\\s*\"(?<depName>[^:]*?):(?<currentValue>.*)\": {",
+        "// renovate: depType=(?<depType>devDependencies?) datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?( extractVersion=(?<extractVersion>.*?))?\\s*\".*\":\\s*\"(?<currentValue>.*)\""
+      ],
+      "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}",
+      "extractVersionTemplate": "{{#if (equals extractVersion 'true')}}^v(?<version>.*)${{else if extractVersion}}{{{extractVersion}}}{{else}}^(?<version>.*)${{/if}}"
+    }
+  ]
+}
