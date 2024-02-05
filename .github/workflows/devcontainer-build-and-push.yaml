@@ -28,10 +28,10 @@ jobs:
           flavor: |
             latest=false
           tags: |
-            type=raw,value=latest,enable=
-            type=semver,pattern=
-            type=semver,pattern=.
-            type=semver,pattern=
+            type=raw,value=latest,enable={{is_default_branch}}
+            type=semver,pattern={{version}}
+            type=semver,pattern={{major}}.{{minor}}
+            type=semver,pattern={{major}}
       - name: Process tags for Docker image
         id: image
         run: |
