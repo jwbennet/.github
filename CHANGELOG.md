@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/jwbennet/.github/compare/v1.0.2...v1.0.3) (2024-02-05)
+
+
+### Bug Fixes
+
+* Include user in container image name ([2edd83c](https://github.com/jwbennet/.github/commit/2edd83c510452e139d222e0c6c8c5885e37f4e38))
+
 ## [1.0.2](https://github.com/jwbennet/.github/compare/v1.0.1...v1.0.2) (2024-02-05)
 
 
