@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/jwbennet/.github/compare/v1.0.1...v1.0.2) (2024-02-05)
+
+
+### Bug Fixes
+
+* Update name of dev container ([cb07d3e](https://github.com/jwbennet/.github/commit/cb07d3e9eb185a89dcdf64652dd59bb63cad745a))
+
 ## [1.0.1](https://github.com/jwbennet/.github/compare/v1.0.0...v1.0.1) (2024-02-05)
 
 
