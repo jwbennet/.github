@@ -5,7 +5,7 @@
     "github>jwbennet/.github:renovate-dev-containers",
     "github>jwbennet/.github:renovate-pre-commit"
   ],
-  "repositories": ["jwbennet/.github"],
+  "gitAuthor": "renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
   "packageRules": [
     {
       "matchPackagePatterns": ["*"],
