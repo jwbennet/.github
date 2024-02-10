@@ -13,3 +13,5 @@ jobs:
         uses: renovatebot/github-action@v40.0.2
         with:
           token: ${{ secrets.RENOVATE_TOKEN }}
+        env:
+          RENOVATE_LOG_LEVEL: DEBUG
