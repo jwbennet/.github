@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/jwbennet/.github/compare/v1.1.0...v1.2.0) (2024-02-10)
+
+
+### Features
+
+* Update dev container to use pinned parent image ([22fc9e6](https://github.com/jwbennet/.github/commit/22fc9e62e52921bb6f1e99af08a10a4e1efc6e70))
+
 ## [1.1.0](https://github.com/jwbennet/.github/compare/v1.0.3...v1.1.0) (2024-02-08)
 
 
